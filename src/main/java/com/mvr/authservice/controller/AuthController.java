@@ -26,9 +26,4 @@ public class AuthController {
         AuthResponse authResponse = authService.login(loginRequest);
         return ResponseEntity.ok(authResponse);
     }
-    @GetMapping("/hello")
-    public String hello() {
-        return "Hello, Authenticated User!";
-    }
-
 }

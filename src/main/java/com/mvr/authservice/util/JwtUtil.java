@@ -48,15 +48,4 @@ public class JwtUtil {
         return expiration.before(new Date());
     }
 
-
-    /*Host : dpg-d1ae67idbo4c73cd6cq0-a
-    Port : 5432
-    database : authdb_103v
-    username : authusermvr
-    pasword : 3AcpRFqd0BHOBtmFlQJwpAhAErBMKXwu
-
-    internal datbase url : postgresql://authusermvr:3AcpRFqd0BHOBtmFlQJwpAhAErBMKXwu@dpg-d1ae67idbo4c73cd6cq0-a/authdb_103v
-    extrnal datbase url : postgresql://authusermvr:3AcpRFqd0BHOBtmFlQJwpAhAErBMKXwu@dpg-d1ae67idbo4c73cd6cq0-a.ohio-postgres.render.com/authdb_103v
-
-    psql command : PGPASSWORD=3AcpRFqd0BHOBtmFlQJwpAhAErBMKXwu psql -h dpg-d1ae67idbo4c73cd6cq0-a.ohio-postgres.render.com -U authusermvr authdb_103v*/
 }
