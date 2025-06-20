@@ -1,39 +1,40 @@
 # 🔐 AuthService – Spring Boot Authentication Microservice
 
-A lightweight and pluggable **registration and login microservice** built with Spring Boot, Spring Security, JWT, and PostgreSQL.
-
-This microservice can be easily reused in other projects by adding it as a Maven dependency (via JitPack).
+A lightweight, secure, and reusable **Registration and Login Microservice** built with Spring Boot, Spring Security, and JWT — designed to be easily embedded into any Java project via Maven dependency.
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-- Register new users securely
-- Login with JWT token generation
-- Passwords are hashed using BCrypt
-- Stateless JWT-based authentication
-- Spring Security configuration
-- Easily deployable and embeddable via JitPack
+- **User Registration:** Secure signup with email and password validation.
+- **JWT Authentication:** Stateless, token-based login for scalable security.
+- **Password Security:** Industry-standard BCrypt password hashing.
+- **Spring Security Integration:** Flexible security configuration out-of-the-box.
+- **Plug & Play:** Add as a Maven dependency from GitHub via JitPack.
+- **Database Support:** PostgreSQL ready; use cloud-hosted free services like ElephantSQL or Render.
+- **Clean & Maintainable:** Uses Lombok for boilerplate reduction and follows best practices.
 
 ---
 
-## ⚙️ Tech Stack
+## 🛠️ Technology Stack
 
-- Java 17+
-- Spring Boot 3.x
-- Spring Security
-- JWT (JJWT)
-- PostgreSQL (via Render or ElephantSQL)
-- Maven
-- Lombok
+| Technology         | Purpose                             |
+|--------------------|-----------------------------------|
+| Java 17+           | Core programming language          |
+| Spring Boot 3.x    | Application framework              |
+| Spring Security    | Authentication & authorization    |
+| JWT (JJWT)         | JSON Web Tokens for authentication|
+| PostgreSQL         | Relational database                |
+| Maven              | Build and dependency management   |
+| Lombok             | Code simplification               |
 
 ---
 
 ## 📦 Usage
 
-### 🧩 1. Add Dependency (via JitPack)
+### 1. Add JitPack Repository
 
-Make sure your repository is public and tagged (e.g., `v1.0`). Then add the following in your `pom.xml`:
+Add JitPack repository in your project's `pom.xml`:
 
 ```xml
 <repositories>
@@ -42,9 +43,10 @@ Make sure your repository is public and tagged (e.g., `v1.0`). Then add the foll
     <url>https://jitpack.io</url>
   </repository>
 </repositories>
-
+### 2. Add AuthService Dependency
 <dependency>
-  <groupId>com.github.tejeshreddy</groupId>
+  <groupId>com.github.TejeshReddy999</groupId>
   <artifactId>authservice</artifactId>
-  <version>v1.0</version>
+  <version>1.0.1</version>
 </dependency>
+
