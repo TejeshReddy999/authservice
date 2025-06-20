@@ -1,21 +1,50 @@
-# 🔐 Login Microservice – Reusable Authentication Module
+# 🔐 AuthService – Spring Boot Authentication Microservice
 
-This microservice provides a **JWT-based login and authentication solution** built with Spring Boot and Spring Security. It is designed to be used as a **plug-and-play dependency** in other microservices or Spring Boot projects.
+A lightweight and pluggable **registration and login microservice** built with Spring Boot, Spring Security, JWT, and PostgreSQL.
+
+This microservice can be easily reused in other projects by adding it as a Maven dependency (via JitPack).
+
+---
 
 ## 🚀 Features
 
-- ✅ **Reusable Login Service** – Add as a dependency to any project.
-- 🔒 **Secure Authentication** – Uses Spring Security and JWT for stateless login.
-- 🧰 **BCrypt Password Encryption** – Ensures secure storage of user credentials.
-- 🛡️ **Token Validation Middleware** – Verifies JWT tokens in request headers.
-- 🔁 **Modular Architecture** – Easy to extend or override.
-- ⚙️ **Minimal Configuration Required** – Just include and configure database + JWT secret.
+- Register new users securely
+- Login with JWT token generation
+- Passwords are hashed using BCrypt
+- Stateless JWT-based authentication
+- Spring Security configuration
+- Easily deployable and embeddable via JitPack
 
-## 🏗️ Tech Stack
+---
 
-- **Java 17+**
-- **Spring Boot 3.x**
-- **Spring Security 6**
-- **JWT (JJWT or similar)**
-- **PostgreSQL (or any JPA-supported DB)**
-- **Maven**
+## ⚙️ Tech Stack
+
+- Java 17+
+- Spring Boot 3.x
+- Spring Security
+- JWT (JJWT)
+- PostgreSQL (via Render or ElephantSQL)
+- Maven
+- Lombok
+
+---
+
+## 📦 Usage
+
+### 🧩 1. Add Dependency (via JitPack)
+
+Make sure your repository is public and tagged (e.g., `v1.0`). Then add the following in your `pom.xml`:
+
+```xml
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+
+<dependency>
+  <groupId>com.github.tejeshreddy</groupId>
+  <artifactId>authservice</artifactId>
+  <version>v1.0</version>
+</dependency>
